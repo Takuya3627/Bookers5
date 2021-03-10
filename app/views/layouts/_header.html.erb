@@ -21,5 +21,10 @@
         </ul>
       </div>
     </div>
-  </nav>
+  </nav><br>
+  <% if user_signed_in? %>
+    <div class='text-center'>
+      <%= render 'searchs/form' %>
+    </div>
+  <% end %>
 </header>
